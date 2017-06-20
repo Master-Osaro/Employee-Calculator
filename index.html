@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Salary Calculator</title>
+    <link rel="stylesheet" type=text/css href="css\style.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="text/javascript" src="js\jquery321.js"></script>
+    <script type="text/javascript" src="js\script.js"></script>
+</head>
+
+<body class="bod">
+    <h1 class="mainTitle">Employee Salary Calculator</h1>
+    <div class="">         			
+            	<select name="Employee" class="sel">
+                    <option value="Select">Select Position</option>
+               		<option name="Interns" value="Interns">Interns</option>
+                    <option name="Associates"  value="Associates">Associates</option>
+                    <option name="Managers"  value="Managers">Managers</option>
+                    <option name="Executives"  value="Executives">Executives</option>
+                    <option name="Directors"  value="Directors">Directors</option>        
+                </select>
+                <!--<p><input type="submit" name="submit" onclick="document.getElementById('demo').innerHTML= "; = class="inputfield"></p>-->
+			    <select name="level" class="lev">
+                    <option value="Select">Select Level</option>
+               		<option name="Level One" value="Level One">Level One</option>
+                    <option name="Level Two" value="Level Two">Level Two</option>
+                    <option name="Level Three" value="Level Three">Level Three</option>
+                    <option name="Level Four"  value="Level Four">Level Four</option>
+                    <option name="Level Five"  value="Level Five">Level Five</option>        
+                </select>
+                <input onClick="calculateSalary()" type="submit" class="butn" value="Calculate" />
+    </div>
+    <hr>
+    <div class="img-box">
+     <p>Salary details</p>
+     <hr size="5">
+     <p id="ans1"></p>
+     <p id="ans2"></p>
+     <p id="basSal"></p>
+     <p id="allw"></p>
+    </div>
+        
+</body>
+
+</html>
